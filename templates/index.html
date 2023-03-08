@@ -14,7 +14,10 @@
     </form>
 
     {% if prediction %}
-    <p>Your prediction : {{ prediction }}</p>
+    <p>Input : {{text}}</p>
+    <p>Kategori 1 : {{ prediction[2][0] }} dengan nilai {{prediction[2][1]}}</p>
+    <p>Kategori 2 : {{ prediction[1][0] }} dengan nilai {{prediction[1][1]}}</p>
+    <p>Kategori 3 : {{ prediction[0][0] }} dengan nilai {{prediction[0][1]}}</p>
     {% endif %}
 </body>
 </html>
